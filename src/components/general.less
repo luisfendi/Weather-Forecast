@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Neue&family=Mulish&display=swap');
+* {
+    font-family: 'Mulish', sans-serif;
+}
+@import './vars.less';
+@media(min-width: @laptop){
+    .listUl{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .list-item {
+        padding: 3%;
+        border: 2px solid black;
+        border-radius: 15px;
+        overflow:hidden;
+        width: 25%;
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+        max-width: 270px;
+        max-height: 300px;
+        button {
+            top: 0;
+            left: 0;
+            width: 7%;
+            order: 3;
+        }
+        .cardCity{
+            
+        }
+    }
+}
+
+.padding{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media (min-width:@laptop) {
+    .padding{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media (min-width:@desktop) {
+    .padding{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
